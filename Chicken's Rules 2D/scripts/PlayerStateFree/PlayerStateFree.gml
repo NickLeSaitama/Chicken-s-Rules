@@ -1,6 +1,5 @@
 function PlayerStateFree(){
-
-
+	
 PlayerMovement();
 PlayerCollision();
 PlayerAnimation();
@@ -27,7 +26,6 @@ if (spaceBar)
 	if (waitRoll >= waitRollDuration)
 	{
 		state = PlayerStateRoll;
-		vsp = -1.8;
 		moveDistanceRemaining = distanceRoll;
 		waitRoll = 0;
 		//audio_play_sound(sndPlayerRoll,5,false);

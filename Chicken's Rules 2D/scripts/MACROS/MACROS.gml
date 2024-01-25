@@ -1,7 +1,7 @@
 function MACROS(){
 	#macro FRAME_RATE 60
 	#macro TILE_SIZE 16
-	#macro ROOM_START Room1
+	#macro ROOM_START rForest
 	#macro RESOLUTION_W 640
 	#macro RESOLUTION_H 350
 	#macro TRANSITION_SPEED 0.03

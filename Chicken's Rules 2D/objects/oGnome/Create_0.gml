@@ -2,7 +2,7 @@
 event_inherited();
 
 
-entityDropList = [oCoin,oCoin,oCoin];
+entityDropList = [oApple,oCoin,oCoin];
 
 state = ENEMYSTATE.WANDER;
 

@@ -3,8 +3,8 @@
 hsp = 0;
 vsp = 0;
 spd = 1.5;
-grv = 0.23;
-jumpHeight = 3.0;
+grv = 0.2;
+jumpHeight = 3;
 
 //Other
 invincible = 0;
@@ -14,8 +14,8 @@ onHitCount = 0;
 iFrames = false;
 
 //Rolling
-speedRoll = 2.8;
-distanceRoll = 100.0;
+speedRoll = 2.5;
+distanceRoll = 50.0;
 waitRollDuration = 20;
 waitRoll = 0;
 

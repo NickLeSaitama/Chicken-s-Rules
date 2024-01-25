@@ -18,8 +18,7 @@ x = x + hsp;
 
 //Verical
 
-if (!onFloor) vsp = (grv + vsp);
-
+vsp = (grv + vsp); 
 if (place_meeting(x,y+vsp,oCol))
 {
 	while (!place_meeting(x,y+sign(vsp),oCol))
@@ -29,6 +28,7 @@ if (place_meeting(x,y+vsp,oCol))
 	if (vsp > 0) y = floor(y);
 	vsp = 0;
 }
+show_debug_message(y);
 
 //Platform
 

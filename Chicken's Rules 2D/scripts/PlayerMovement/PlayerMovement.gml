@@ -8,6 +8,6 @@ hsp = (right - left) * _spd;
 
 if ((jump) and onFloor == true)
 {
-	vsp -= jumpHeight;
+	vsp = -jumpHeight;
 }
 }

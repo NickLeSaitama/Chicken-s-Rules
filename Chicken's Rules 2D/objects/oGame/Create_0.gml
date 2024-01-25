@@ -13,7 +13,7 @@ global.textspeed = .45;
 global.targetRoom = -1;
 global.targetX = -1;
 global.targetY = -1;
-global.targetRespawn = Room1;
+global.targetRespawn = rForest;
 global.targetDirection = 0;
 
 //Stat

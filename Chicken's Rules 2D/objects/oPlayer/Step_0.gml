@@ -4,6 +4,7 @@ up = keyboard_check(ord("W"));
 jump = keyboard_check_pressed(ord("W"));
 spaceBar = keyboard_check_pressed(vk_space);
 down = keyboard_check(ord("S"));
+keyAction = keyboard_check_pressed(ord("E"));
 keyActionPrimary = keyboard_check_pressed(ord("J"));
 
 //Execute current state

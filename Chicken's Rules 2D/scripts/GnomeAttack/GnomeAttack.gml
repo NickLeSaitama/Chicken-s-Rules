@@ -2,9 +2,9 @@ function GnomeAttack(){
 	
 if (floor(image_index) == 2) and (image_speed == 1)
 {
-	hsp = 3;
+	hsp = 2.5;
 	hsp = hsp * dir;
-	vsp = -1.8;
+	vsp = -2;
 	image_speed = 0;
 }
 else if (onFloor) and (image_index >= 2)

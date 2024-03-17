@@ -21,7 +21,8 @@ switch(global.playerWeaponEquipped)
 	}
 	atkDmgScript = NoneAtkDmg;
 	break;
-	
+
+	//Sword
 	case WEAPON.SWORD :
 	atkType = PlayerAttackDefault
 	with (oWeapon)
@@ -35,5 +36,22 @@ switch(global.playerWeaponEquipped)
 		return 2;
 	}
 	atkDmgScript = SwordAtkDmg;
+	break;
+	
+	//Spear
+	case WEAPON.SPEAR :
+	atkType = PlayerAttackDefault
+	with (oWeapon)
+	{
+		atkSprite = sPlayerSpear
+		atkSpriteHB = sPlayerSpearHB;
+		atkDmg = 2;
+	}
+	function SpearAtkDmg()
+	{
+		return 2;
+	}
+	atkDmgScript = SpearAtkDmg;
+	break;
 }
 }

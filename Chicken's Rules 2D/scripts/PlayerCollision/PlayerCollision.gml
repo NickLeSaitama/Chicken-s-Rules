@@ -7,11 +7,19 @@ onFloor = (place_meeting(x,y+1,oCol)) or (place_meeting(x,y+1,oPlatform) and (in
 
 if (place_meeting(x+hsp,y,oCol))
 {
-	while (!place_meeting(x+sign(hsp),y,oCol))
+	if (!place_meeting(x+sign(hsp),y-1,oCol)) 
 	{
-		x = x + sign(hsp);
+		y -= 1;
+		hsp = sign(hsp);
 	}
-	hsp = 0;
+	else
+	{
+		while (!place_meeting(x+sign(hsp),y,oCol))
+		{
+			x = x + sign(hsp);
+		}
+		hsp = 0;
+	}
 }
 
 x = x + hsp;
@@ -28,7 +36,7 @@ if (place_meeting(x,y+vsp,oCol))
 	if (vsp > 0) y = floor(y);
 	vsp = 0;
 }
-show_debug_message(y);
+
 
 //Platform
 

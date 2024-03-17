@@ -20,6 +20,6 @@ else
 	if (statePrevious != ENEMYSTATE.ATTACK) state = statePrevious; else state = ENEMYSTATE.CHASE;
 }
 EnemyCollision();
-if (onFloor != true) sprite_index = sprJump; else sprite_index = sprMove;
+//if (onFloor != true) sprite_index = sprJump; else sprite_index = sprMove;
 if (hsp != 0) image_xscale = sign(-hsp);
 }

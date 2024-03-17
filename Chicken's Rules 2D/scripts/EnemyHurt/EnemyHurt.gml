@@ -5,19 +5,9 @@ with(_enemy)
 {
 	if (state != ENEMYSTATE.DIE)
 	{
-		if (_source != "debuff")
-		{
 		_damage = floor(_damage);
-		}
 		enemyHP -= _damage;
-		var _inst = instance_create_layer(x+10,y-20,"Player",oNumberDisplay);
-		if instance_exists(_inst)
-		{
-			with(_inst)
-			{
-				number = _damage;
-			}
-		}
+		CreateNumberDisplay(x+10,y-20,_damage,c_red);
 		flash = 1;
 		if (enemyHP <= 0)
 		{

@@ -32,7 +32,7 @@ global.playerMagic = 0;
 global.playerLuck = 0;
 
 //Weapon
-global.playerWeaponEquipped = WEAPON.SWORD;
+global.playerWeaponEquipped = WEAPON.SPEAR;
 global.playerWeaponUnlocked = array_create(WEAPON.TYPE_COUNT, false);
 global.playerWeaponUnlocked[WEAPON.SWORD] = true;
 

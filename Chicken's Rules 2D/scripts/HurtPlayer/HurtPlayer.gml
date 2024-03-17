@@ -1,7 +1,7 @@
 
 function HurtPlayer(_direction,_force,_damage){
 
-if (oPlayer.invincible <= 0) && (oPlayer.iFrames == false)//and (oPlayer.state != PlayerStateDead)
+if (oPlayer.invincible <= 0) && (oPlayer.iFrames == false) and (oPlayer.state != PlayerStateDead)
 {
 	global.playerHealth = max(0, global.playerHealth-_damage);
 	audio_play_sound(sndPlayerHurt,5,false);
@@ -33,7 +33,7 @@ if (oPlayer.invincible <= 0) && (oPlayer.iFrames == false)//and (oPlayer.state !
 	else
 	{
 		//Kill player
-		//with (oPlayer) state = PlayerStateDead;
+		with (oPlayer) state = PlayerStateDead;
 	}
 }
 }

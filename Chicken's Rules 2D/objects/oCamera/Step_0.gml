@@ -32,8 +32,14 @@ camera_set_view_pos(cam, x - viewWidthHalf, y - viewHeightHalf);
 
 //Background
 
-if (layer_exists("Backgrounds_1"))
+if (layer_exists("Backgrounds"))
 {
-	layer_x("Backgrounds_1",x/1.5);
+	layer_x("Backgrounds",x/2);
+	//layer_y("Backgrounds_1",y - viewHeightHalf);
+}
+
+if (layer_exists("Backgrounds_2"))
+{
+	layer_x("Backgrounds_2",x/1.6);
 	//layer_y("Backgrounds_1",y - viewHeightHalf);
 }

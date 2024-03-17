@@ -23,3 +23,11 @@ state = PlayerStateFree;
 
 PlayerWeaponEquip(-1);
 PlayerArtifactEquip(-1, -1);
+
+//Positionning player
+if (global.targetX != -1)
+{
+	x = global.targetX;
+	y = global.targetY;
+	if (global.targetDirection != 0) image_xscale = global.targetDirection;
+}

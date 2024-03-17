@@ -4,6 +4,7 @@ var hitByAttackNow = ds_list_create();
 var hits = instance_place_list(x,y,pEntity,hitByAttackNow,false);
 if (hits > 0)
 {
+	oPlayer.onHitCount++;
 	for (var i = 0; i < hits; i++)
 	{
 		var hitID = hitByAttackNow[| i]; ds_list_find_value(hitByAttackNow,i);
@@ -18,12 +19,11 @@ if (hits > 0)
 					{
 						with oPlayer
 						{
-							onHitCount++;
 							//if (attackOnHitScript != -1) script_execute(attackOnHitScript);
 							if (artifactOnHitScript[0] != -1) script_execute(artifactOnHitScript[0], hitID);
-							if (artifactDmgModifierScript[0] != -1) _dmg = script_execute(artifactDmgModifierScript[0], _dmg);
+							if (artifactDmgModifierScript[0] != -1) var _modifiedDmg = script_execute(artifactDmgModifierScript[0], _dmg);
 						}
-						HurtEnemy(id,_dmg, other.id, 2);
+						HurtEnemy(id,_modifiedDmg, other.id, 0);
 						audio_play_sound(sndPlayerHit,5,false);
 					}
 				}

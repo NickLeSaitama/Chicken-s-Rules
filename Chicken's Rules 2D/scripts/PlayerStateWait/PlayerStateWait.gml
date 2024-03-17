@@ -1,0 +1,4 @@
+function PlayerStateWait(){
+PlayerAnimation();
+PlayerAnimation();
+}

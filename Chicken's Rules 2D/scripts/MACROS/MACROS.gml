@@ -3,7 +3,7 @@ function MACROS(){
 	#macro TILE_SIZE 16
 	#macro ROOM_START rForest
 	#macro RESOLUTION_W 640
-	#macro RESOLUTION_H 350
+	#macro RESOLUTION_H 360
 	#macro TRANSITION_SPEED 0.03
 	#macro OUT 0
 	#macro IN 1
@@ -12,6 +12,7 @@ function MACROS(){
 	{
 		NONE,
 		SWORD,
+		SPEAR,
 		TYPE_COUNT
 	}
 	
